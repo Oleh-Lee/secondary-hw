@@ -1,6 +1,8 @@
-text {
+{ 
+text:
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+
 }
 .main-menu-link:hover {
     color: red;
