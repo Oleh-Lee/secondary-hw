@@ -1,3 +1,12 @@
-.menu :hover {
+text {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+.main-menu-link:hover {
     color: red;
 }
+.main-menu li {
+    display: inline-block;
+}
+
+
