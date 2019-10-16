@@ -12,7 +12,14 @@
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
   }
-  
+  html{
+    box-sizing:border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
   /* Sections
      ========================================================================== */
   
@@ -148,6 +155,11 @@
   img {
     border-style: none;
   }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
   
   /* Forms
      ========================================================================== */
