@@ -1,4 +1,7 @@
-
+.containet{
+    width: 600px;
+    margin: auto;
+}
 h2{
     text-align: center;
 }
@@ -10,16 +13,40 @@ h2{
     
 }
 .catalog{
-    width: 1000px;
+    width: 600px;
     margin: 0 auto;
 }
 .catalog-item{
     width: 300px;
     outline: 2px solid #424242;
     float: left;
+   
 }
 .catalog-item:hover{
     color: blueviolet;
 }
- 
- 
+.arrows a::before{
+    content: "\2192";
+    
+}
+.catalog-item2{
+    color: #0E1116;
+}
+.catalog-item2:nth-child(3n+1){
+    background-color: #88292F;
+}
+.catalog-item2:nth-child(2n+2){
+    background-color: #5DB7DE;
+}
+.catalog-item2:nth-child(3n+3){
+    background-color: #0D5D56;
+}
+body{
+    counter-reset: count-item;
+}
+.item{
+counter-increment: item-counter;
+}
+.item:before{
+    content: counter(Item-counter, apper-roman);
+}
